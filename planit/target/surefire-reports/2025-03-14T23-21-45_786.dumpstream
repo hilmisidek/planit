@@ -1,0 +1,5 @@
+# Created at 2025-03-14T23:21:46.501
+Boot Manifest-JAR contains absolute paths in classpath 'd:\repor\planit\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

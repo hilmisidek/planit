@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
@@ -33,9 +34,15 @@ public class mainTest {
         //set chrome driver path
         String path = System.getProperty("user.dir");
         System.setProperty("webdriver.chrome.driver",path + "\\chromedriver.exe");
+        
         driver.get("https://jupiter.cloud.planittesting.com/");
         System.out.println("Starting TEST");
         }
+
+    @AfterClass
+    public void teardown(){
+        driver.close();
+    }
 
     @Test
     public void test_case_1(){
