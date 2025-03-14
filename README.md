@@ -26,7 +26,11 @@ PAGE OBJECT MODEL : This is page object classes. All web element and methods for
 2. Object as test data
 
 ## Walkthrough: 
-Running **mvn test** search for mainTest class. Test Case declared using testNG annotations  
+
+
+Running **mvn test** search for mainTest class. Test Case declared using testNG annotations 
+
+
 Test Case 1:  
 1. From main test class, create a contact page object then call method to click contact page menu item
 2. Call chechMandatoryError method which then calls submitForm() method to submit form without entering any field
