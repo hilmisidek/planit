@@ -40,13 +40,14 @@ Test Case 1:
 
 Test Case 2:  
 1. From main test class, create a contact page object then call method to click contact page menu item
-2. Call fillMAndatory() method to fill all mandatory field
+2. Call fillMandatory() method to fill all mandatory field
 3. Call submitForm() method to submit form
 4. Call checkSubmissionStatus method
 5. Wait for progress bar element presence
 6. Wait until progress bar element not presence
-7. Validate Successful submission message with variable forename in message
-8. Run this test case 5 times using testNG invocationCount
+7. Break wait loop if submission is taking more than 120 seconds and fail the test run
+8. Validate Successful submission message with variable forename in message
+9. Run this test case 5 times using testNG invocationCount
 
 Test Case 3:  
 1. From main test class, create new item class objects for each item to buy with item name, quantity and item price
