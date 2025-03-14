@@ -2,64 +2,64 @@
 <testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-14T17:35:01 AEDT" name="Surefire suite" finished-at="2025-03-14T17:35:46 AEDT" duration-ms="45489">
+  <suite started-at="2025-03-14T17:43:25 AEDT" name="Surefire suite" finished-at="2025-03-14T17:44:07 AEDT" duration-ms="42229">
     <groups>
     </groups>
-    <test started-at="2025-03-14T17:35:01 AEDT" name="Surefire test" finished-at="2025-03-14T17:35:46 AEDT" duration-ms="45489">
+    <test started-at="2025-03-14T17:43:25 AEDT" name="Surefire test" finished-at="2025-03-14T17:44:07 AEDT" duration-ms="42229">
       <class name="mainTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:mainTest@7776ab]" started-at="2025-03-14T17:35:01 AEDT" name="setup" finished-at="2025-03-14T17:35:02 AEDT" duration-ms="1531" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:mainTest@7776ab]" started-at="2025-03-14T17:43:25 AEDT" name="setup" finished-at="2025-03-14T17:43:26 AEDT" duration-ms="1518" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_case_1()[pri:0, instance:mainTest@7776ab]" started-at="2025-03-14T17:35:02 AEDT" name="test_case_1" finished-at="2025-03-14T17:35:04 AEDT" duration-ms="1160" status="PASS">
+        <test-method signature="test_case_1()[pri:0, instance:mainTest@7776ab]" started-at="2025-03-14T17:43:26 AEDT" name="test_case_1" finished-at="2025-03-14T17:43:27 AEDT" duration-ms="1103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_case_1 -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:mainTest@7776ab]" started-at="2025-03-14T17:35:04 AEDT" name="setup" finished-at="2025-03-14T17:35:04 AEDT" duration-ms="84" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:mainTest@7776ab]" started-at="2025-03-14T17:43:27 AEDT" name="setup" finished-at="2025-03-14T17:43:27 AEDT" duration-ms="56" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_case_2()[pri:0, instance:mainTest@7776ab]" started-at="2025-03-14T17:35:04 AEDT" name="test_case_2" finished-at="2025-03-14T17:35:15 AEDT" duration-ms="11117" status="PASS">
+        <test-method signature="test_case_2()[pri:0, instance:mainTest@7776ab]" started-at="2025-03-14T17:43:27 AEDT" name="test_case_2" finished-at="2025-03-14T17:43:32 AEDT" duration-ms="4412" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_case_2 -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:mainTest@7776ab]" started-at="2025-03-14T17:35:15 AEDT" name="setup" finished-at="2025-03-14T17:35:15 AEDT" duration-ms="89" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:mainTest@7776ab]" started-at="2025-03-14T17:43:32 AEDT" name="setup" finished-at="2025-03-14T17:43:32 AEDT" duration-ms="44" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_case_2()[pri:0, instance:mainTest@7776ab]" started-at="2025-03-14T17:35:15 AEDT" name="test_case_2" finished-at="2025-03-14T17:35:33 AEDT" duration-ms="17925" status="PASS">
+        <test-method signature="test_case_2()[pri:0, instance:mainTest@7776ab]" started-at="2025-03-14T17:43:32 AEDT" name="test_case_2" finished-at="2025-03-14T17:43:44 AEDT" duration-ms="12650" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_case_2 -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:mainTest@7776ab]" started-at="2025-03-14T17:35:33 AEDT" name="setup" finished-at="2025-03-14T17:35:33 AEDT" duration-ms="82" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:mainTest@7776ab]" started-at="2025-03-14T17:43:44 AEDT" name="setup" finished-at="2025-03-14T17:43:44 AEDT" duration-ms="63" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_case_2()[pri:0, instance:mainTest@7776ab]" started-at="2025-03-14T17:35:33 AEDT" name="test_case_2" finished-at="2025-03-14T17:35:36 AEDT" duration-ms="3178" status="PASS">
+        <test-method signature="test_case_2()[pri:0, instance:mainTest@7776ab]" started-at="2025-03-14T17:43:44 AEDT" name="test_case_2" finished-at="2025-03-14T17:43:51 AEDT" duration-ms="6108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_case_2 -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:mainTest@7776ab]" started-at="2025-03-14T17:35:36 AEDT" name="setup" finished-at="2025-03-14T17:35:36 AEDT" duration-ms="80" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:mainTest@7776ab]" started-at="2025-03-14T17:43:51 AEDT" name="setup" finished-at="2025-03-14T17:43:51 AEDT" duration-ms="65" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_case_2()[pri:0, instance:mainTest@7776ab]" started-at="2025-03-14T17:35:36 AEDT" name="test_case_2" finished-at="2025-03-14T17:35:38 AEDT" duration-ms="1838" status="PASS">
+        <test-method signature="test_case_2()[pri:0, instance:mainTest@7776ab]" started-at="2025-03-14T17:43:51 AEDT" name="test_case_2" finished-at="2025-03-14T17:44:02 AEDT" duration-ms="11241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_case_2 -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:mainTest@7776ab]" started-at="2025-03-14T17:35:38 AEDT" name="setup" finished-at="2025-03-14T17:35:38 AEDT" duration-ms="67" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:mainTest@7776ab]" started-at="2025-03-14T17:44:02 AEDT" name="setup" finished-at="2025-03-14T17:44:02 AEDT" duration-ms="37" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_case_2()[pri:0, instance:mainTest@7776ab]" started-at="2025-03-14T17:35:38 AEDT" name="test_case_2" finished-at="2025-03-14T17:35:44 AEDT" duration-ms="5604" status="PASS">
+        <test-method signature="test_case_2()[pri:0, instance:mainTest@7776ab]" started-at="2025-03-14T17:44:02 AEDT" name="test_case_2" finished-at="2025-03-14T17:44:04 AEDT" duration-ms="2494" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_case_2 -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:mainTest@7776ab]" started-at="2025-03-14T17:35:44 AEDT" name="setup" finished-at="2025-03-14T17:35:44 AEDT" duration-ms="62" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:mainTest@7776ab]" started-at="2025-03-14T17:44:04 AEDT" name="setup" finished-at="2025-03-14T17:44:04 AEDT" duration-ms="37" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_case_3()[pri:0, instance:mainTest@7776ab]" started-at="2025-03-14T17:35:44 AEDT" name="test_case_3" finished-at="2025-03-14T17:35:46 AEDT" duration-ms="2596" status="PASS">
+        <test-method signature="test_case_3()[pri:0, instance:mainTest@7776ab]" started-at="2025-03-14T17:44:04 AEDT" name="test_case_3" finished-at="2025-03-14T17:44:07 AEDT" duration-ms="2359" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_case_3 -->

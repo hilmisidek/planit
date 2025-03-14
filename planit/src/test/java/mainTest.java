@@ -29,7 +29,8 @@ public class mainTest {
         
     @BeforeMethod
     public void setup(){
-    System.setProperty("webdriver.chrome.driver","\\repor\\planit\\planit\\src\\test\\java\\chromedriver.exe");
+    String path = System.getProperty("user.dir");
+    System.setProperty("webdriver.chrome.driver",path + "\\chromedriver.exe");
     //WebDriver driver = new ChromeDriver();  
     driver.get("https://jupiter.cloud.planittesting.com/");
     System.out.println("Starting TEST");
