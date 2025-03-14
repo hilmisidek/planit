@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
@@ -29,6 +30,7 @@ public class mainTest {
         
     WebDriver driver = new ChromeDriver();
 
+    //BeforeMethod is used because of test invocation in test case 2
     @BeforeMethod
     public void setup(){
         //set chrome driver path
@@ -36,12 +38,12 @@ public class mainTest {
         System.setProperty("webdriver.chrome.driver",path + "\\chromedriver.exe");
         
         driver.get("https://jupiter.cloud.planittesting.com/");
-        System.out.println("Starting TEST");
+        System.out.println("\nStarting TEST");
         }
-
-    @AfterClass
+            
+    @AfterTest    
     public void teardown(){
-        driver.close();
+         driver.close();
     }
 
     @Test
@@ -96,6 +98,12 @@ public class mainTest {
         double subtotal1 = newcart.checkSubtotal(stuffedFrog);
         double subtotal2 = newcart.checkSubtotal(fluffyBunny);
         double subtotal3 = newcart.checkSubtotal(valentineBear);
+
+        //check item price
+        newcart.checkPrice(stuffedFrog);
+        newcart.checkPrice(fluffyBunny);
+        newcart.checkPrice(valentineBear);
+        
         //calculate total from sum(subtotal)
         double expTotal = subtotal1+subtotal2+subtotal3;
         //check total

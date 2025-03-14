@@ -4,6 +4,9 @@ package page;
 
 
 import java.time.Duration;
+import java.time.LocalTime;
+import java.time.temporal.Temporal;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -107,10 +110,38 @@ public class contact {
     }
 
     public void checkSubmissionStatus() {
+        //wait for progress bar
         wait.until(ExpectedConditions.presenceOfElementLocated(progressBar));
+        
+        //to calculate submisison progress duration
+        //get current time and initialize interval
+        Temporal timestart = LocalTime.now();
+        Long intrval = (long) 0;
+
         while (driver.findElements(progressBar).size()>0){
-             //do nothing just to wait for the progress bar to go away
-        }
+            //get current time
+            Temporal timeNow = LocalTime.now();
+            //check duration between current time and initial time
+            Duration durr = Duration.between(timestart, timeNow);
+            //convert duration to seconds
+            Long longDuration = durr.toSeconds();
+
+            //print interval
+            if (longDuration>intrval){
+                System.out.print(longDuration + "-");
+                //set new interval value to longuration in seconds
+                intrval=longDuration;
+            }
+
+            //if submission take longer than 120 seconds, break the wait and fail test 
+            if (intrval > 120){
+                //fail test if progress bar is taking more than 120 seconds
+                System.out.println("\n!!!Submission is taking more than 120 seconds!!!");
+                //make the test fail
+                Assert.fail("Submission stuck, failing test");
+                break;
+                }
+             }
         wait.until(ExpectedConditions.presenceOfElementLocated(alertSubmitPass));
         
         //set submission succes message using forename
